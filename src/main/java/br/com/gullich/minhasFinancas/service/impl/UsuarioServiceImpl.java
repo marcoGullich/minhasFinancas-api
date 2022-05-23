@@ -53,4 +53,9 @@ public class UsuarioServiceImpl implements UsuarioService {
 		}
 		
 	}
+
+	@Override
+	public Usuario obterPorId(Long idUsuario) {
+		return repository.getById(idUsuario);
+	}
 }

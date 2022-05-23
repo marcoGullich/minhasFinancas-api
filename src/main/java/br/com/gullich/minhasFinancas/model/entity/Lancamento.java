@@ -17,6 +17,8 @@ import javax.persistence.Table;
 
 import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import br.com.gullich.minhasFinancas.model.enums.StatusLancamento;
 import br.com.gullich.minhasFinancas.model.enums.TipoLancamento;
 import lombok.AllArgsConstructor;
@@ -28,6 +30,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
 public class Lancamento {
 	
 	@Id
