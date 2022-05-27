@@ -1,7 +1,6 @@
 package br.com.gullich.minhasFinancas.api.resource;
 
 import java.util.Objects;
-import java.util.Optional;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
